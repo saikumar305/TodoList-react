@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=EB+Garamond:wght@500&family=Londrina+Solid&display=swap');
 
-.header{
-  text-align: center;
-  margin: auto;
-   font-family: 'Londrina Solid', cursive;
-   font-size: 100px;
-}
-
 *{
   margin: 0;
   padding: 0;
@@ -19,8 +12,13 @@ body{
   background: radial-gradient(#e78679,#49f740);
   background-repeat:repeat;
   /* font-family: 'EB Garamond', serif; */
- 
 }
+/* .header{
+  text-align: center;
+  margin: auto;
+   font-family: 'Londrina Solid', cursive;
+   font-size: 100px;
+} */
 .task-input{
   display:flex;
   flex-direction: column;
