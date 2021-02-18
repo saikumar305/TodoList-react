@@ -1,38 +1,105 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=EB+Garamond:wght@500&family=Londrina+Solid&display=swap');
+
+.header{
   text-align: center;
+  margin: auto;
+   font-family: 'Londrina Solid', cursive;
+   font-size: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  width: 100vw;
+  height:100vh;
+  background: radial-gradient(#e78679,#49f740);
+  background-repeat:repeat;
+  /* font-family: 'EB Garamond', serif; */
+ 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.task-input{
+  display:flex;
   flex-direction: column;
-  align-items: center;
+  margin: auto;
+  background-color: #f0b4fc;
+  border-radius: 5px;
+  box-shadow: 10px  10px 10px 10px rgb(78, 75, 75);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card{
+  box-shadow: 10px  10px 10px 10px rgb(78, 75, 75);
+}
+
+.task-input input,textarea{
+  border-radius: 10px;
+  border: none;
+  background-color: transparent !important;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.task-input textarea:focus{
+  outline: none;
+  background-color: transparent  !important;
+}
+
+.button{
+  width:25%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  border: #292c2c;
+  border-radius: 5px;
+  color: black;
+}
+.duedate{
+  margin-left: 20px;
+  padding-bottom: 0px;
+}
+.button:hover{
+  background:linear-gradient(#544664,#569898);
+}
+.task-input button{
+  margin-left: 15px;
+}
+.list{
+  color: rgb(70, 44, 44);
+  width: 300px;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 5px;
+  font-family: 'Acme', sans-serif;
+}
+
+.outline-hidden{
+  border: none;
+  width:90%;
+}
+input:focus{
+  outline: none;
+  background-color: transparent;
+}
+textarea:focus{
+  outline:none;
+  background-color: transparent;
+}
+
+.del-btn{
+  border-radius: 10px;
+  width:30%;
+  float: right;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:95%;
+  background-color: rgb(90, 66, 66);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
 }
